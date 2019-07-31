@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+            android:text="@string/FaresAlBishi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/textView" tools:visibility="visible"
+            android:textAlignment="center"
+            style="@style/NameStyle" android:textIsSelectable="false" android:textSize="@dimen/text_size"/>
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/btn_star_big_on"
+            android:id="@+id/yellow_star"
+            android:contentDescription="@string/yellow_star"/>
+
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:ems="10"
+            android:id="@+id/nickname_edit"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/nickname_text"/>
+    <Button
+            android:text="done"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/button2" android:visibility="visible"
+            tools:visibility="visible"/>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:id="@+id/ScrollView"
+            android:isScrollContainer="@bool/stringtext" android:visibility="visible" tools:visibility="visible"
+            android:paddingEnd="16dp" android:paddingStart="14dp" android:paddingTop="16dp">
+
+        <TextView
+                android:text="@string/ABOUTME"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView3" android:textSize="24sp"/>
+    </ScrollView>
+</LinearLayout>
